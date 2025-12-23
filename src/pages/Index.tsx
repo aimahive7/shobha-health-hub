@@ -1,14 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from 'react';
+import { CartProvider } from '@/hooks/useCart';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import Categories from '@/components/Categories';
+import Products from '@/components/Products';
+import About from '@/components/About';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
-const Index = () => {
+function IndexContent() {
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
+  const handleCategoryClick = (category: string | null) => {
+    setActiveCategory(category);
+    setTimeout(() => {
+      document.querySelector('#products')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <Categories onCategoryClick={handleCategoryClick} activeCategory={activeCategory} />
+        <Products activeCategory={activeCategory} />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-};
+}
 
-export default Index;
+export default function Index() {
+  return (
+    <CartProvider>
+      <IndexContent />
+    </CartProvider>
+  );
+}
