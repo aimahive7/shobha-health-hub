@@ -1,25 +1,22 @@
-import { ArrowDown, MessageCircle, Shield, Truck, Clock } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { useCart } from '@/hooks/useCart';
+import { ArrowDown, MessageCircle, Shield, Truck, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useCart } from "@/hooks/useCart";
 
 const trustBadges = [
-  { icon: Shield, text: '100% Genuine', description: 'Authentic products only' },
-  { icon: Truck, text: 'Free Delivery', description: 'On orders above ₹500' },
-  { icon: Clock, text: '24x7 Support', description: 'We\'re always here' },
+  { icon: Shield, text: "100% Genuine", description: "Authentic products only" },
+  { icon: Truck, text: "Free Delivery", description: "On orders above ₹500" },
+  { icon: Clock, text: "24x7 Support", description: "We're always here" },
 ];
 
 export default function Hero() {
   const { generateWhatsAppLink } = useCart();
 
   const scrollToCategories = () => {
-    document.querySelector('#categories')?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector("#categories")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section
-      id="home"
-      className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-16 md:pt-20"
-    >
+    <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-16 md:pt-20">
       {/* Background */}
       <div className="absolute inset-0 gradient-hero" />
       <div className="absolute inset-0 opacity-5">
@@ -32,23 +29,31 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium animate-fade-in-up">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            Your Trusted Pharmacy Since 2020
+            Your Trusted Pharmacy Since 2019
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            Medicines, Cosmetics & More –{' '}
-            <span className="text-primary">Delivered Fast</span> via{' '}
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight animate-fade-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Medicines, Cosmetics & More – <span className="text-primary">Delivered Fast</span> via{" "}
             <span className="text-accent">WhatsApp</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <p
+            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             Genuine products from trusted brands. Order in seconds – just message us on WhatsApp!
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
             <Button
               size="lg"
               className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground gap-2 text-base h-12 px-8 shadow-accent-glow"
@@ -71,7 +76,10 @@ export default function Hero() {
           </div>
 
           {/* Trust Badges */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 pt-8 md:pt-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <div
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 pt-8 md:pt-12 animate-fade-in-up"
+            style={{ animationDelay: "0.4s" }}
+          >
             {trustBadges.map((badge, index) => (
               <div
                 key={badge.text}
