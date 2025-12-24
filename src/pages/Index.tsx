@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { CartProvider } from '@/hooks/useCart';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Categories from '@/components/Categories';
@@ -8,7 +7,7 @@ import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
-function IndexContent() {
+export default function Index() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   const handleCategoryClick = (category: string | null) => {
@@ -30,13 +29,5 @@ function IndexContent() {
       </main>
       <Footer />
     </div>
-  );
-}
-
-export default function Index() {
-  return (
-    <CartProvider>
-      <IndexContent />
-    </CartProvider>
   );
 }
