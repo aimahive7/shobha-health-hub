@@ -20,7 +20,7 @@ export const products: Product[] = [
     category: "otc",
     description: "Fever & pain relief tablets",
     composition: "Paracetamol 650mg",
-    unit: "Strip of 15 tablets"
+    unit: "Strip of 15 tablets",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const products: Product[] = [
     category: "otc",
     description: "Fast acting pain relief",
     composition: "Paracetamol 500mg",
-    unit: "Strip of 15 tablets"
+    unit: "Strip of 15 tablets",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const products: Product[] = [
     category: "otc",
     description: "Allergy relief tablets",
     composition: "Cetirizine Hydrochloride 10mg",
-    unit: "Strip of 10 tablets"
+    unit: "Strip of 10 tablets",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&h=300&fit=crop",
     category: "cosmetics",
     description: "Purifying neem face wash for oily skin",
-    unit: "100ml"
+    unit: "100ml",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=300&h=300&fit=crop",
     category: "cosmetics",
     description: "Daily moisturizer with SPF 24",
-    unit: "120ml"
+    unit: "120ml",
   },
   {
     id: 6,
@@ -72,7 +72,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=300&h=300&fit=crop",
     category: "baby",
     description: "Gentle baby oil for soft skin",
-    unit: "200ml"
+    unit: "200ml",
   },
   {
     id: 7,
@@ -82,7 +82,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&h=300&fit=crop",
     category: "baby",
     description: "Medium size diapers pack",
-    unit: "Pack of 56"
+    unit: "Pack of 56",
   },
   {
     id: 8,
@@ -92,7 +92,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=300&h=300&fit=crop",
     category: "ayurvedic",
     description: "Immunity booster with 40+ herbs",
-    unit: "500g"
+    unit: "500g",
   },
   {
     id: 9,
@@ -102,7 +102,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1596463989561-13ba27991900?w=300&h=300&fit=crop",
     category: "ayurvedic",
     description: "Pure aloe vera gel for skin",
-    unit: "150ml"
+    unit: "150ml",
   },
   {
     id: 10,
@@ -112,7 +112,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=300&h=300&fit=crop",
     category: "surgical",
     description: "Medical grade face masks",
-    unit: "Box of 50"
+    unit: "Box of 50",
   },
   {
     id: 11,
@@ -122,7 +122,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=300&h=300&fit=crop",
     category: "surgical",
     description: "Accurate digital thermometer",
-    unit: "1 piece"
+    unit: "1 piece",
   },
   {
     id: 12,
@@ -133,8 +133,8 @@ export const products: Product[] = [
     category: "wellness",
     description: "Daily multivitamin supplement",
     composition: "Vitamins, Minerals, Ginseng",
-    unit: "Bottle of 30 capsules"
-  }
+    unit: "Bottle of 30 capsules",
+  },
 ];
 
 export const categories = [
@@ -148,10 +148,10 @@ export const categories = [
   { id: "general", name: "General", icon: "ShoppingBasket", description: "Everyday health essentials" },
 ];
 
-export const WHATSAPP_NUMBER = "+919876543210";
+export const WHATSAPP_NUMBER = "+919028670610";
 export const STORE_NAME = "Shobha Medical Stores";
 export const STORE_ADDRESS = "Pimpri, Maharashtra";
 export const STORE_EMAIL = "mahendra.shirse@gmail.com";
-export const STORE_PHONE = "+91-9876543210";
+export const STORE_PHONE = "+91-9028670610";
 export const STORE_TIMINGS = "9:00 AM - 11:00 PM";
 export const ESTABLISHED_YEAR = 2020;
